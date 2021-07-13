@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: spring-transactional
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://101.50.2.9:5432/adadua_db
+    username: b2camp_bacth_2
+    password: b2camp_bacth_2
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-dll: true
+    hibernate:
+      ddl-auto: update
